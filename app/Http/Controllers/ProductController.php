@@ -10,7 +10,9 @@ class ProductController extends Controller
 
     public function index(Request $request)
     {
+
         $query = $request->input('search');
+        // dd($query);
         
         // Fetch products based on the search query
         $products = Product::when($query, function($queryBuilder) use ($query) {
@@ -18,7 +20,7 @@ class ProductController extends Controller
                                 ->orWhere('description', 'like', "%{$query}%");
         })->get();
         
-        return view('dashboard', compact('products'));
+        return view('dashboard', compact('products'));  
     }
 
 public function create()

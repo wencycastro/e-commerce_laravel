@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="/dashboard">{{ config('app.name') }}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -17,9 +17,9 @@
                     <a class="nav-link" href="{{ route('create_product') }}">Create Product</a>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+            <form class="d-flex" method="GET" action="{{ route('dashboard') }}">
+                <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search" value="{{ request()->input('search') }}">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
     </div>

@@ -22,14 +22,11 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+
 </head>
 
-<body>
+<body style="font-family: 'Poppins', sans-serif;">
     <div>
         @include('shared.nav')
     </div>

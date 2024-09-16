@@ -1,0 +1,124 @@
+/* Background and text color for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #001f3f; /* Navy blue */
+    color: #ffffff;
+}
+
+/* Headings and text elements */
+h1, h2, h3, h4, h5, h6, .navbar, .card-title, .card-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Customizing the navbar */
+.navbar {
+    background-color: #001f3f; /* Navy blue */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .nav-link.active,
+.navbar .navbar-toggler-icon {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: #ffdd57; /* Light accent color for links on hover */
+}
+
+/* Styling buttons */
+
+.btn-secondary {
+    background-color: #4b4f57; /* Darker navy blue */
+    border-color: #4b4f57;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d; /* Even darker navy blue */
+    border-color: #6c757d;
+}
+
+.btn-danger {
+    background-color: #ff4d4d; /* Light red for better contrast */
+    border-color: #ff4d4d;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e03e3e; /* Darker red for hover */
+    border-color: #e03e3e;
+}
+
+.btn-outline-success {
+    border-color: #ffdd57;
+    color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffdd57;
+    border-color: #ffdd57;
+    color: #001f3f;
+}
+
+/* Card styling */
+.card {
+    background-color: #003366; /* Darker navy blue */
+    color: white;
+    border: none;
+}
+
+.card .card-title,
+.card .card-text {
+    color: white;
+}
+
+.card .card-img-custom {
+    height: 200px;
+    width: 100%;
+    object-fit: contain; /* Ensures the whole image is visible */
+}
+
+.card .card-img-top {
+    border-radius: 10px;
+}
+
+/* Form inputs */
+.form-control {
+    background-color: #00264d; /* Dark background */
+    color: #629dd8;
+    border: 1px solid #001f3f; /* Matching border color */
+}
+
+.form-control::placeholder {
+    color: #a0a0a0; /* Light gray for placeholder text */
+}
+
+.form-control:focus {
+    background-color: #003366; /* Darker background on focus */
+    border-color: #ffdd57;
+    color: white;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-floating {
+    color: #000000;
+}
+
+/* Additional customization for card shadow and spacing */
+.card.shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize links and buttons inside the card */
+.card-footer a.btn {
+    color: white;
+}
+
+/* Ensure consistent styling across different components */
+.navbar, .card, .form-control {
+    border-radius: 5px; /* Rounded corners for a softer look */
+}

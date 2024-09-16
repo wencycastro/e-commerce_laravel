@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Profile')
+
 @section('content')
     <div class="container mt-4">
         <div class="card shadow-sm p-4">
@@ -7,12 +9,12 @@
             <div class="form-floating mb-3">
                 <input type="email" class="form-control rounded" id="floatingInput" placeholder="name@example.com"
                     value="{{ $email }}" readonly>
-                <label for="floatingInput">Email address</label>
+                <label class="form-floating" for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
                 <input type="text" class="form-control rounded" id="floatingName" placeholder="Name"
                     value="{{ $name }}" readonly>
-                <label for="floatingName">Name</label>
+                <label class="form-floating" for="floatingName">Name</label>
             </div>
         </div>
     </div>
